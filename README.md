@@ -34,7 +34,7 @@ git commit -am "first commit"
 
 ### Step 3: Add Store
 
-- Create a store that can `addAssetList`. Use `Chain` and `AssetList` types from the `@chain-registry/types`, and data from `chain-registry` — add a small set, 2-5 random assets from `chain-registry`. Choose a default chain, such as `"osmosis"` 
+- Create a store that can `addAssetList`. Use `Chain` and `AssetList` types from the `@chain-registry/types`, and data from `chain-registry` — add a small set, 2-5 random assets from `chain-registry`. Choose a default chain, such as `"osmosis"`, and store it as something like `state.selectedChain`.
 
 ### Step 4: Build the UI
 
