@@ -47,7 +47,7 @@ git commit -am "first commit"
 ### Step 5 (optional): Add the chain selector
 
 - Integrate and render a chain selector using the `chain-registry`'s `Chain` infos.
-- The modal (or popover or other) should render the ComboBox component, allowing the user to select a chain. Reference for the ComboBox implementation can be found in the [Cosmology Storybook](https://storybook.cosmology.zone/?path=/story/combobox--custom-combobox-item).
+- The main screnn (not a modal) should render the ComboBox component, allowing the user to select a chain. Reference for the ComboBox implementation can be found in the [Cosmology Storybook](https://storybook.cosmology.zone/?path=/story/combobox--custom-combobox-item).
 - The selected chain, e.g., `osmosis` should determine which set of assets can show up in the list of assets.
 - Upon selecting a chain from the ComboBox, it will change the `state.selectedChain`
 
