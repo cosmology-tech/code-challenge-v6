@@ -50,6 +50,13 @@ git commit -am "first commit"
 - No need to connect a wallet or implement authentication.
 - Focus on UI implementation and state management.
 
+## Bonus
+
+Not required, but if that was simple for you, consider adding the following as a bonus:
+
+- `addChain` screen with similar functionality, but for chains
+- A layout, a menu, or some organization
+
 ## Submission Guidelines
 
 - DO NOT fork this repo.
