@@ -8,7 +8,7 @@ In this challenge, you are tasked with creating a UI that enables users to add t
 
 - Make sure to include all of the [deliverables](#deliverables) of your expertise.
   - If you're experienced in implementing UI components, you can focus on the [UI Components](#ui-components) part. And include state management and some of the business logic as a bonus.
-  - Or you can focus on the [Business Logic](#business-logic) part with a rough UI to show the data. And including a well implemented UI would be a bonus.
+  - Or you can focus on the [Business Logic](#business-logic) part, make the business logic readable and maintainable. For the UI, you can just make a rough one to show the data. And including a well implemented UI would be a bonus.
 - No real data handling like deposit/withdraw actions is required.
 - No need to connect a wallet or implement authentication.
 - Focus on UI implementation and business logic.
