@@ -2,11 +2,18 @@
 
 ## Overview
 
-In this challenge, you are tasked with creating a basic UI that enables users to add tokens to an asset list. Your application will feature a ComboBox for selecting assets and an "Add Asset" button to trigger the selection process. This challenge is designed to assess your skills in React component integration and state management.
+In this challenge, you are tasked with creating a UI that enables users to add tokens to an asset list. Your application will feature a ComboBox for selecting assets and an "Add Asset" button to trigger the selection process, etc. This challenge is designed to assess your skills in React component integration and state management.
 
-## Challenge Steps
+## Requirements
 
-### Step 1: Project Setup
+- Make sure to include all of the [deliverables](#deliverables) of your expertise.
+  - If you're experienced in implementing UI components, you can focus on the [UI Components](#ui-components) part. And include state management and some of the business logic as a bonus.
+  - Or you can focus on the [Business Logic](#business-logic) part, make the business logic readable and maintainable. For the UI, you can just make a rough one to show the data. And including a well implemented UI would be a bonus.
+- No real data handling like deposit/withdraw actions is required.
+- No need to connect a wallet or implement authentication.
+- Focus on UI implementation and business logic.
+
+## Setup
 
 - Install `create-cosmos-app` globally using npm:
 
@@ -28,47 +35,45 @@ git add .
 git commit -am "first commit"
 ```
 
-### Step 2: State Management
+- Then you're good to start your magic.
 
-- Add a state management library of your choice (e.g., Zustand, MobX).
+## Deliverables
 
-### Step 3: Add Store
+### UI Components
 
-- Create a store that can `addAssetList`. Use `Chain` and `AssetList` types from the `@chain-registry/types`, and data from `chain-registry` — add a small set, 2-5 random assets from `chain-registry`. Choose a default chain, such as `"osmosis"`, and store it as something like `state.selectedChain`.
+- [ ] Integrate and render the asset-list component as shown in the [storybook](https://storybook.cosmology.zone/?path=/docs/asset-assetlist--docs) — which should display the asset list.
+- [ ] Implement an "Add Asset" button that, when clicked, opens a modal or another UI element of your choice.
+- [ ] The modal (or popover or other) should render the ComboBox component, allowing the user to select an asset to add. Reference for the ComboBox implementation can be found in the [Cosmology Storybook](https://storybook.cosmology.zone/?path=/story/combobox--custom-combobox-item).
+- [ ] The `state.selectedChain`, e.g., `osmosis` should determine which set of assets can show up in the list of assets.
+- [ ] Upon selecting an asset from the ComboBox, the asset list should update to include the chosen asset. Likely should have a submit button to confirm.
+- [ ] When the deposit button is clicked, open a modal as follows(Static component. No need to add functionalities):
+![deposit](./deposit.png)
+- [ ] Not required, but if that was simple for you, consider adding the following: A layout, a menu, or some organization
 
-### Step 4: Build the UI
+#### Notes
 
-- Integrate and render the asset-list component as shown [here](https://cosmology.zone/explorer?category=asset&element=asset-list) and in the [storybook](https://storybook.cosmology.zone/?path=/docs/asset-assetlist--docs) — which should display the assets from the state.
-- Implement an "Add Asset" button that, when clicked, opens a modal or another UI element of your choice.
-- The modal (or popover or other) should render the ComboBox component, allowing the user to select an asset to add. Reference for the ComboBox implementation can be found in the [Cosmology Storybook](https://storybook.cosmology.zone/?path=/story/combobox--custom-combobox-item).
-- The `state.selectedChain`, e.g., `osmosis` should determine which set of assets can show up in the list of assets.
-- Upon selecting an asset from the ComboBox, the asset list should update to include the chosen asset. Likely should have a submit button to confirm.
+- Using `Styled Component` only. Don't use any UI Kit.
+- `Theme` is optional.
 
-### Step 5 (optional): Add the chain selector
+### Business Logic
 
-- Integrate and render a chain selector using the `chain-registry`'s `Chain` infos.
-- The main screen (not a modal) should render the ComboBox component, allowing the user to select a chain. Reference for the ComboBox implementation can be found in the [Cosmology Storybook](https://storybook.cosmology.zone/?path=/story/combobox--custom-combobox-item).
-- The selected chain, e.g., `osmosis` should determine which set of assets can show up in the list of assets.
-- Upon selecting a chain from the ComboBox, it will change the `state.selectedChain`
+- [ ] Add a state management library of your choice (e.g., Zustand, MobX).
+- [ ] Create a store that can `addAssetList`. Use `Chain` and `AssetList` types from the `@chain-registry/types`, and data from `chain-registry`
+— [ ] Add a small set, 2-5 random assets from `chain-registry`. Choose a default chain, such as `"osmosis"`, and store it as something like `state.selectedChain`.
+- [ ] Implement a configurable data source adapter to support multiple data sources. Implement two data source providers as follows, and then config to use one of these potential data sources when starting the demo:
+  - chain-registry
+  - @chain-registry/client
 
+#### Notes
 
-## Requirements
-
-- No real data handling like deposit/withdraw actions is required.
-- No need to connect a wallet or implement authentication.
-- Focus on UI implementation and state management.
-
-## Bonus
-
-Not required, but if that was simple for you, consider adding the following as a bonus:
-
-- A layout, a menu, or some organization
+- DO NOT add any other dependencies unless there's a good reason. Use libs provided in the boilerplate only is preferred.
+- Show your consideration on readability, maintainability and optimization.
 
 ## Submission Guidelines
 
+- Include this README in your repository with checked [deliverables](#deliverables) and instructions on how to run your project.
 - DO NOT fork this repo.
-- When you clone the repo, make sure to commit the boilerplate state so we can see the commits more cleanly.
+- Make sure to commit the boilerplate state in git as the first commit so we can see the commits more cleanly, BEFORE you make changes.
 - Ensure your project is available on GitHub or a similar platform.
-- Include a README in your repository with instructions on how to run your project.
 
 Good luck!
