@@ -67,6 +67,7 @@ git commit -am "first commit"
 #### Notes
 
 - DO NOT add any other dependencies unless there's a good reason. Use libs provided in the boilerplate only is preferred.
+- Show your consideration on readability, maintainability and optimization.
 
 ## Submission Guidelines
 
