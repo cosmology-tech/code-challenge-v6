@@ -15,27 +15,9 @@ In this challenge, you are tasked with creating a UI that enables users to add t
 
 ## Setup
 
-- Install `create-cosmos-app` globally using npm:
-
-```bash
-npm install -g create-cosmos-app
-```
-
-- Scaffold your project with the `connect-chain` template:
-
-```bash
-cca --template connect-chain
-```
-
-- Make sure to commit the boilerplate state in git as the first commit so we can see the commits more cleanly, BEFORE you make changes.
-
-```bash
-git init .
-git add .
-git commit -am "first commit"
-```
-
-- Then you're good to start your magic.
+- You can use either vite or next app
+- React
+- Using Styled Components only (can use `emotion` or `styled-components`). Don't use any UI Kit.
 
 ## Deliverables
 
