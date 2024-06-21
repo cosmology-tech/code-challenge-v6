@@ -41,7 +41,7 @@ In this challenge, you are tasked with creating a UI that enables users to add t
 
 - [ ] Add a state management library of your choice (e.g., Zustand, MobX).
 - [ ] Create a store that can `addAssetList`. Use `Chain` and `AssetList` types from the `@chain-registry/types`, and data from `chain-registry`
-— [ ] Add a small set, 2-5 random assets from `chain-registry`. Choose a default chain, such as `"osmosis"`, and store it as something like `state.selectedChain`.
+- [ ] Add a small set, 2-5 random assets from `chain-registry`. Choose a default chain, such as `"osmosis"`, and store it as something like `state.selectedChain`.
 - [ ] Implement a configurable data source adapter to support multiple data sources. Implement two data source providers as follows, and then config to use one of these potential data sources when starting the demo:
   - chain-registry
   - @chain-registry/client
